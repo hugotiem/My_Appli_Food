@@ -10,11 +10,6 @@
 		A3987B4327903B4A000C2262 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3987B4227903B4A000C2262 /* AppDelegate.swift */; };
 		A3987B4C27903B4C000C2262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3987B4B27903B4C000C2262 /* Assets.xcassets */; };
 		A3987B4F27903B4C000C2262 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3987B4D27903B4C000C2262 /* LaunchScreen.storyboard */; };
-		A3987B5827903B9F000C2262 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3987B5727903B9F000C2262 /* Student.swift */; };
-		A3987B5A27903BAD000C2262 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3987B5927903BAD000C2262 /* Monster.swift */; };
-		A3987B5C27903C47000C2262 /* XP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3987B5B27903C47000C2262 /* XP.swift */; };
-		A3987B5E27903C90000C2262 /* Fighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3987B5D27903C90000C2262 /* Fighter.swift */; };
-		A3987B6027903DE6000C2262 /* XPFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3987B5F27903DE6000C2262 /* XPFactory.swift */; };
 		A3987B642790405B000C2262 /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3987B622790405B000C2262 /* SubscribeViewController.swift */; };
 		A3987B652790405B000C2262 /* SubscribeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3987B632790405B000C2262 /* SubscribeViewController.xib */; };
 		A3987B682790410F000C2262 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3987B6A2790410F000C2262 /* Localizable.strings */; };
@@ -23,8 +18,6 @@
 		A3987B73279062F1000C2262 /* MonsterAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3987B72279062F1000C2262 /* MonsterAnnotation.swift */; };
 		A3987B7627906781000C2262 /* CLLocationCoordinate2D+RandomDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3987B7527906781000C2262 /* CLLocationCoordinate2D+RandomDistance.swift */; };
 		A3987B7827906A79000C2262 /* Monsters.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3987B7727906A79000C2262 /* Monsters.plist */; };
-		A3987B7A27906C5A000C2262 /* MonsterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3987B7927906C5A000C2262 /* MonsterInfo.swift */; };
-		A3987B7D27906CB3000C2262 /* MonsterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3987B7C27906CB3000C2262 /* MonsterService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +26,6 @@
 		A3987B4B27903B4C000C2262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3987B4E27903B4C000C2262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3987B5027903B4C000C2262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3987B5727903B9F000C2262 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
-		A3987B5927903BAD000C2262 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
-		A3987B5B27903C47000C2262 /* XP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XP.swift; sourceTree = "<group>"; };
-		A3987B5D27903C90000C2262 /* Fighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fighter.swift; sourceTree = "<group>"; };
-		A3987B5F27903DE6000C2262 /* XPFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPFactory.swift; sourceTree = "<group>"; };
 		A3987B622790405B000C2262 /* SubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
 		A3987B632790405B000C2262 /* SubscribeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribeViewController.xib; sourceTree = "<group>"; };
 		A3987B692790410F000C2262 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -48,8 +36,6 @@
 		A3987B72279062F1000C2262 /* MonsterAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterAnnotation.swift; sourceTree = "<group>"; };
 		A3987B7527906781000C2262 /* CLLocationCoordinate2D+RandomDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+RandomDistance.swift"; sourceTree = "<group>"; };
 		A3987B7727906A79000C2262 /* Monsters.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Monsters.plist; sourceTree = "<group>"; };
-		A3987B7927906C5A000C2262 /* MonsterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterInfo.swift; sourceTree = "<group>"; };
-		A3987B7C27906CB3000C2262 /* MonsterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				A3987B71279062D8000C2262 /* Annotations */,
-				A3987B5727903B9F000C2262 /* Student.swift */,
-				A3987B5927903BAD000C2262 /* Monster.swift */,
-				A3987B5B27903C47000C2262 /* XP.swift */,
-				A3987B5D27903C90000C2262 /* Fighter.swift */,
-				A3987B7927906C5A000C2262 /* MonsterInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -116,7 +97,6 @@
 		A3987B6127903DED000C2262 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				A3987B5F27903DE6000C2262 /* XPFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -140,7 +120,6 @@
 		A3987B7B27906C9F000C2262 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A3987B7C27906CB3000C2262 /* MonsterService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -220,16 +199,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3987B5A27903BAD000C2262 /* Monster.swift in Sources */,
-				A3987B6027903DE6000C2262 /* XPFactory.swift in Sources */,
-				A3987B7A27906C5A000C2262 /* MonsterInfo.swift in Sources */,
-				A3987B5E27903C90000C2262 /* Fighter.swift in Sources */,
 				A3987B642790405B000C2262 /* SubscribeViewController.swift in Sources */,
 				A3987B4327903B4A000C2262 /* AppDelegate.swift in Sources */,
 				A3987B7627906781000C2262 /* CLLocationCoordinate2D+RandomDistance.swift in Sources */,
-				A3987B5827903B9F000C2262 /* Student.swift in Sources */,
-				A3987B7D27906CB3000C2262 /* MonsterService.swift in Sources */,
-				A3987B5C27903C47000C2262 /* XP.swift in Sources */,
 				A3987B6F27904740000C2262 /* MapViewController.swift in Sources */,
 				A3987B73279062F1000C2262 /* MonsterAnnotation.swift in Sources */,
 			);
