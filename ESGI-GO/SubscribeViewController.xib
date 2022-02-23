@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubscribeViewController" customModule="ESGI_GO" customModuleProvider="target">
+            <connections>
+                <outlet property="heightTextField" destination="7kI-PW-2fe" id="Cyb-KM-ih4"/>
+                <outlet property="nicknameTextField" destination="lOo-iE-3Me" id="Myj-Ma-T2e"/>
+                <outlet property="sexSegmentedControl" destination="loo-iv-awM" id="PIz-Ab-dd7"/>
+                <outlet property="titleLabel" destination="bEv-sJ-45I" id="xET-50-UDG"/>
+                <outlet property="validateButton" destination="QAL-VW-TMs" id="UpG-sV-XjZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NICKNAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lOo-iE-3Me">
+                    <rect key="frame" x="10" y="90" width="394" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="HEIGHT" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7kI-PW-2fe">
+                    <rect key="frame" x="10" y="134" width="394" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="loo-iv-awM">
+                    <rect key="frame" x="10" y="178" width="394" height="32"/>
+                    <segments>
+                        <segment title="MALE"/>
+                        <segment title="FEMALE"/>
+                    </segments>
+                </segmentedControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAL-VW-TMs">
+                    <rect key="frame" x="163" y="219" width="88" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="VALIDATE"/>
+                    <connections>
+                        <action selector="handleValidate" destination="-1" eventType="touchUpInside" id="r4g-nh-hDL"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEv-sJ-45I">
+                    <rect key="frame" x="10" y="59" width="394" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bEv-sJ-45I" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="AZw-Z2-aJJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="loo-iv-awM" secondAttribute="trailing" constant="10" id="CLT-Su-Y7c"/>
+                <constraint firstItem="lOo-iE-3Me" firstAttribute="top" secondItem="bEv-sJ-45I" secondAttribute="bottom" constant="10" id="Jbf-MO-Fl0"/>
+                <constraint firstItem="lOo-iE-3Me" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="K9o-wI-fof"/>
+                <constraint firstItem="loo-iv-awM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="WAa-rV-oVu"/>
+                <constraint firstItem="QAL-VW-TMs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZMx-Ca-lPJ"/>
+                <constraint firstItem="bEv-sJ-45I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="aYY-AF-ETL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7kI-PW-2fe" secondAttribute="trailing" constant="10" id="dDp-gQ-ke5"/>
+                <constraint firstItem="7kI-PW-2fe" firstAttribute="top" secondItem="lOo-iE-3Me" secondAttribute="bottom" constant="10" id="frH-XF-Jpq"/>
+                <constraint firstItem="QAL-VW-TMs" firstAttribute="top" secondItem="loo-iv-awM" secondAttribute="bottom" constant="10" id="gjh-Tx-FTk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lOo-iE-3Me" secondAttribute="trailing" constant="10" id="i2K-mR-HNj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bEv-sJ-45I" secondAttribute="trailing" constant="10" id="pGt-Qx-3fa"/>
+                <constraint firstItem="7kI-PW-2fe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="phG-aL-gS2"/>
+                <constraint firstItem="loo-iv-awM" firstAttribute="top" secondItem="7kI-PW-2fe" secondAttribute="bottom" constant="10" id="wPQ-IE-VCB"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="66"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
