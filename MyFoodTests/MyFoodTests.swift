@@ -21,14 +21,24 @@ class MyFoodTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
+    func testAutocomplete() throws {
+        let search: Search = Search()
+        let expectation = self.expectation(description: "Searching")
+        search.autoComplete(search: "mcdo") { data, err in
+
+            XCTAssertNotNil(data)
+            expectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
     func testSearch() throws {
         let search: Search = Search()
         let expectation = self.expectation(description: "Searching")
         search.fetchRestaurant(search: "mcdo") { data, err in
-            
-            print(data)
+
             XCTAssertNotNil(data)
-            
             expectation.fulfill()
         }
         

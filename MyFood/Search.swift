@@ -9,7 +9,15 @@ import Foundation
 
 class Search {
     
-    func autoComplete(search: String, completion: @escaping (([String]?, Error?) -> Void)) -> Void {
+    func autoComplete(search: String, lat: Double?, lng: Double?, completion: @escaping (([String]?, Error?) -> Void)) -> Void {
+        
+        var hasCoordinate: Bool = true
+        
+        if lat == nil || lng == nil {
+            hasCoordinate = false
+        }
+
+        
         let url = URL(string: "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input=\(search)&key=AIzaSyABOSYWAyHuVESY0H-Tt_JGlkx_suQ6rvI")!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -20,11 +28,23 @@ class Search {
                     return
                 }
                 
-                guard let toData = json["results"] as? NSArray else {
+                guard let toData = json["predictions"] as? NSArray else {
                     return
                 }
                 
-                print(toData)
+                var results: [String] = []
+                
+                for res in toData {
+                    guard let r = res as? NSDictionary, let desc = r["description"] as? String else {
+                        return
+                    }
+                    print(r)
+                    results.append(desc)
+                }
+                
+                print(results)
+                
+                completion(results, nil)
             } catch let err {
                 completion(nil, err)
             }
