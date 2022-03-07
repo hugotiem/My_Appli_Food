@@ -9,13 +9,22 @@ import Foundation
 
 class Search {
     
-    func autoComplete(search: String, lat: Double?, lng: Double?, completion: @escaping (([String]?, Error?) -> Void)) -> Void {
-        
-        var hasCoordinate: Bool = true
-        
-        if lat == nil || lng == nil {
-            hasCoordinate = false
+    private static var _instance: Search? = nil
+    
+    static func getInstance() -> Search! {
+        if(_instance == nil) {
+            _instance = Search()
         }
+        return _instance
+    }
+    
+    func autoComplete(search: String, completion: @escaping (([String]?, Error?) -> Void)) -> Void {
+        
+//        var hasCoordinate: Bool = true
+//
+//        if lat == nil || lng == nil {
+//            hasCoordinate = false
+//        }
 
         
         let url = URL(string: "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input=\(search)&key=AIzaSyABOSYWAyHuVESY0H-Tt_JGlkx_suQ6rvI")!
