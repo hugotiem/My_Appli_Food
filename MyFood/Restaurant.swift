@@ -8,10 +8,26 @@
 import Foundation
 
 public class Restaurant {
-    var name: String?
-    var coordinates: [Double?]?
-    var address: String?
-    var tag: String?
+    private var name: String?
+    private var coordinates: [Double?]?
+    private var address: String?
+    private var tag: String?
+    
+    public func getName() -> String?  {
+        return self.name
+    }
+    
+    public func getCoordinates() -> [Double?]? {
+        return self.coordinates
+    }
+    
+    public func getAddress() -> String? {
+        return self.address
+    }
+    
+    public func getTag() -> String? {
+        return self.tag
+    }
     
     public init(name: String?, coordinates:[Double]?, address: String?, tag: String?) {
         self.name = name
