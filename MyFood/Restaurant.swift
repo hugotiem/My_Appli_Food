@@ -13,7 +13,7 @@ public class Restaurant {
     var address: String?
     var tag: String?
     
-    init(name: String?, coordinates:[Double]?, address: String?, tag: String?) {
+    public init(name: String?, coordinates:[Double]?, address: String?, tag: String?) {
         self.name = name
         self.coordinates = coordinates
         self.address = address

@@ -11,14 +11,14 @@ public class Search {
     
     private static var _instance: Search? = nil
     
-    static func getInstance() -> Search! {
+    public static func getInstance() -> Search! {
         if(_instance == nil) {
             _instance = Search()
         }
         return _instance
     }
     
-    func autoComplete(search: String, completion: @escaping (([String]?, Error?) -> Void)) -> Void {
+    public func autoComplete(search: String, completion: @escaping (([String]?, Error?) -> Void)) -> Void {
         
 //        var hasCoordinate: Bool = true
 //
@@ -63,7 +63,7 @@ public class Search {
         
     }
  
-    func fetchRestaurant(search: String, completion: @escaping (([Restaurant]?, Error?) -> Void)) {
+    public func fetchRestaurant(search: String, completion: @escaping (([Restaurant]?, Error?) -> Void)) {
         let url = URL(string: "https://maps.googleapis.com/maps/api/place/textsearch/json?query=\(search)&type=restaurant&key=AIzaSyABOSYWAyHuVESY0H-Tt_JGlkx_suQ6rvI")!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
