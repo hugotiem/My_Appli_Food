@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Search {
+public class Search {
     
     private static var _instance: Search? = nil
     

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Restaurant {
+public class Restaurant {
     var name: String?
     var coordinates: [Double?]?
     var address: String?
